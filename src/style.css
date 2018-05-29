@@ -1,0 +1,9 @@
+body{
+  font-family: verdana;
+  background-color:#666699;
+}
+#root{
+    max-width: 800px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin: 0 auto

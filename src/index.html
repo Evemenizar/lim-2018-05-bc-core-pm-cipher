@@ -6,8 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <div id="root">
+<!-- INFORMACION PAGINA PRINCIPAL -->
+    <center><h1>Cifrado Cesar</h1></center>
+      <p>Biembenid@!
+        Esta es una app web esta diseñada pensando en ti. Sabemos que desseas privacidad a
+        la hora de enviar tus mensajes, y aqui te mostramos cómo :)</p>
+        <button type="submit">Comencemos</button></center>
+
+<!-- CONTENIDO -->
+  <div>
+    <label for="text">Cifrado o decifrado de mensaje:</label><br>
+    <textarea id="text" required></textarea><br>
+  </div>
+  <div>
+    <label for= "key">n° de desplazamiento:</label><br>
+    <input id= "key" type="number" max=5 min=1 required/><br>
+  </div>
+  <div id="divBotones">
+    <button id="decode">Cifrar</button><br>
+    <button id="encode">Descifrar</button><br>
+    <button id="clear">Reiniciar</button><br>
+  </div>
+  <div>
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message"></textarea><br>
+  </div>
+</div>
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
