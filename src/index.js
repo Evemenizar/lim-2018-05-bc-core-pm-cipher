@@ -6,7 +6,8 @@ const decode = document.getElementById('decode');
 const clear = document.getElementById('clear');
 const message = document.getElementById('message');
 
-//Evento click para llamar a la funcion encrypt/Decrypt
+
+//Evento click para llamar a la funcion encrypt/Decrypt/CLEAR
 encode.addEventListener("click", () => {
   message.value = window.cipher.encode(text.value, parseInt(key.value));
 });

@@ -1,9 +1,78 @@
-body{
-  font-family: verdana;
-  background-color:#666699;
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Noto Sans';
+  font-size: 14px;
 }
-#root{
-    max-width: 800px;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    margin: 0 auto
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header{
+  height: 100%;
+  background: #00ace6;
+}
+.main {
+  text-align: left;
+  background: #71aec5;;
+  height: 50%;
+  font-family: 'Chelsea Market';
+  font-size: 20px;
+  color: #666666;
+}
+.main text{
+  height: 50px;
+  width: 50px;
+
+}
+.steps {
+  background: #ccf2ff;
+  height: 50%;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  color: #333333;
+}
+
+.steps span{
+  font-family: 'Chelsea Market';
+  font-size: 19px;
+}
+.footer{
+  background-color: #002233;
+  align-items: flex-end;
+  color: #333333;
+  font-family: 'Henny Penny';
+  font-size: 7px;
+}
+.main button{
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+.div1{
+  float:left;
+  padding: 1%;
+  width: 5%;
+}
+
+.div2{
+  float: left;
+  padding: 1%;
+  width: 22%;
+}
+.div3{
+  float: left;
+  padding: 1%;
+  width: 22%;
+}
+.div4{
+  float:left;
+  padding: 1%;
+  width: 22%;
+}

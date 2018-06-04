@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
   </head>
-  <body>
-  <div id="root">
-<!-- INFORMACION PAGINA PRINCIPAL -->
-    <center><h1>Cifrado Cesar</h1></center>
-      <p>Biembenid@!
-        Esta es una app web esta diseñada pensando en ti. Sabemos que desseas privacidad a
-        la hora de enviar tus mensajes, y aqui te mostramos cómo :)</p>
-        <button type="submit">Comencemos</button></center>
 
-<!-- CONTENIDO -->
-  <div>
-    <label for="text">Cifrado o decifrado de mensaje:</label><br>
-    <textarea id="text" required></textarea><br>
-  </div>
-  <div>
-    <label for= "key">n° de desplazamiento:</label><br>
-    <input id= "key" type="number" max=5 min=1 required/><br>
-  </div>
-  <div id="divBotones">
-    <button id="decode">Cifrar</button><br>
-    <button id="encode">Descifrar</button><br>
-    <button id="clear">Reiniciar</button><br>
-  </div>
-  <div>
-    <label for="message">Mensaje:</label><br>
-    <textarea id="message"></textarea><br>
-  </div>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="wrapper">
+          <div class="title">
+          <img src="../images/logoCC.png" width="220px" height="170px">
+          <center><p>"Ocultar tus mensajes nunca fueron tan fáciles."</p></center>
+        </div>
+      </div>
+    </header>
+
+<div class="steps">
+  <center><img src="../images/linea.png" width="35px" height="35px"></center>
+  <br>
+  <span>PASOS:</span>
+  <br>
+  <br>
+  <center><div class="div1">
+     <img src="../images/uno.png" width="40px" height="40px">
+     <p>En el primer cuadro escribe <br> el mensaje que desees cifrar <br> o descifrar.</p></div>
+     <div class="div2">
+       <img src="../images/dos.png" width="40px" height="40px">
+       <p>Coloca en el segundo cuadro <br> el número de desplazamiento <br> que desees que tenga tu <br> cifrado.</p></div>
+       <div class="div3">
+         <img src="../images/tres.png" width="40px" height="40px">
+         <p>Dale click en el boton de <br> cifrar o descifrar según <br> lo requieras.</p></div>
+         <div class="div4">
+           <img src="../images/cuatro.png" width="40px" height="40px">
+           <p>Una vez tengas el descifrado <br> o cifrado de tu mensaje, <br> ya estara disponible para <br> que lo puedas compartir!</p></div>
+         </div>
+       </center>
+
+    <article class="main">
+      <center><img src="../images/flecha.png" width="30px" height="30px"></center>
+      <br>
+      <br>
+      <center><label for="text">Escribe tu mensaje:</label>
+        <br>
+        <br>
+        <textarea id="text"></textarea>
+        <br>
+        <br>
+        <label for= "key">Llave:</label>
+        <br>
+        <br>
+        <input id= "key" type="number"/>
+        <br>
+        <br>
+        <div class="button1">
+        <button id="decode">Descifrar</button>
+      </div>
+      <div class="button2">
+        <button id="encode">Cifrar</button>
+      </div>
+      <br>
+      <br>
+      <label for="message">Resultado:</label>
+      <br>
+      <br>
+      <textarea id="message"></textarea>
+      <br>
+      <br>
+      <button id="clear">Limpiar</button>
+      <br>
+      <br>
+      <br>
+    </center>
+  </article>
+<!--footer class="footer">Elaborado por Evelyn Meniz</footer -->
+<footer>By: Evelyn Meniz</footer>
 </div>
+
 <script src="cipher.js"></script>
 <script src="index.js"></script>
 </body>
